@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import Archivo
 import csv
 
+
 # Create your views here.
 
 """def home(request):
