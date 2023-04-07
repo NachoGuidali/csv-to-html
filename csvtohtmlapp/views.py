@@ -5,24 +5,7 @@ import csv
 
 # Create your views here.
 
-"""def home(request):
-    context = {
-        "archivos" : Archivo.objects.all()
-    }
-    return render(request, "index.html", context=context)"""
 
-
-
-"""def home(request):
-    csv_filepath = "/home/nachogakd/importcsv/importcsv/csvtohtmlapp/precios_con_coma.csv"
-
-    with open(csv_filepath, 'r') as csv_file:
-        csv_reader = csv.reader(csv_file)
-        rows = []
-        for row in csv_reader:
-            rows.append(row)
-
-    return render(request, 'index.html',{'rows':rows})"""
 
 def home(request):
     with open("/home/nachogakd/importcsv/importcsv/csvtohtmlapp/precios_con_coma.csv", "r") as archivo:
@@ -45,3 +28,22 @@ def home(request):
 
             #print(descmarca, producto, descrip, claseprod, preciosiva)"""
             
+
+    """def home(request):
+    context = {
+        "archivos" : Archivo.objects.all()
+    }
+    return render(request, "index.html", context=context)"""
+
+
+
+"""def home(request):
+    csv_filepath = "/home/nachogakd/importcsv/importcsv/csvtohtmlapp/precios_con_coma.csv"
+
+    with open(csv_filepath, 'r') as csv_file:
+        csv_reader = csv.reader(csv_file)
+        rows = []
+        for row in csv_reader:
+            rows.append(row)
+
+    return render(request, 'index.html',{'rows':rows})"""        
